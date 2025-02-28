@@ -1,5 +1,3 @@
-local sm = require("steamodded")
-
 MOD_NAME = "KeyblePack"
 MOD_ID = "KeyblePack"
 MOD_AUTHOR = "Keyble"

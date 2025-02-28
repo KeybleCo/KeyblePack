@@ -1,0 +1,18 @@
+[manifest]
+version = "0.0.1"
+dump_lua = true
+priority = 69
+
+[vars]
+var_name = "GERMAN HELLO!"
+
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = "self.SPEEDFACTOR = 1"
+position = "after"
+payload = '''
+print(var_name)
+'''
+match_indent = true
+overwrite = false
